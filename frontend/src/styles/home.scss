@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Ubuntu";
+}
+
+body{
+    background-color: #ffd9d9
+}
+
+.home{
+    background-color: #eed5de;
+    text-align: center;
+
+    box-shadow: 0 0 10px rgb(0 , 0 , 0 , 0.288);
+
+    height: 100vh;
+    width: 70%;
+    border-radius: 20px;
+    margin: auto;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    > a{
+        text-decoration: none;
+        font-size: 1.4rem;
+        font-style: italic;
+    }
+}

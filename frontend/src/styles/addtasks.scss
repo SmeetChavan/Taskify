@@ -1,0 +1,33 @@
+.addtask{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    > input {
+        outline: none;
+        padding: 1rem;
+        border-radius: 10px;
+        border: 1px solid #ffdbdb;
+        font-size: 1.4rem;
+
+        margin: 2rem;
+
+        background-color: #ffe4e4;
+    }
+
+    > button{
+        outline: none;
+        border: none;
+        padding: 1.3rem;
+        border-radius: 1.7rem;
+        cursor: pointer;
+
+        font-weight: 700;
+
+        &:hover{
+            background-color: #c17d7d;
+        }
+    }
+
+}
