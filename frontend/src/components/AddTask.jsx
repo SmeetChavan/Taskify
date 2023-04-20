@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import {v4} from 'uuid';
 
 function AddTask({todoArray , setToDoArray , input , setInput , edit , setEdit}) {
@@ -24,6 +25,28 @@ function AddTask({todoArray , setToDoArray , input , setInput , edit , setEdit})
             }
         }
     }
+
+    useEffect(() => {
+
+        if(edit !== null){
+
+            let editted;
+
+            for(let i = 0 ; i < todoArray.length ; ++i){
+
+                if(todoArray[i].id === edit){
+                    editted = todoArray[i];
+                    break;
+                }
+            }
+
+            setInput(editted.title);
+        }
+        else{
+            setInput("");
+        }
+
+    } , [edit , setEdit , setInput , todoArray]);
 
     return(
         <section className="addtask">
