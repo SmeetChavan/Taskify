@@ -5,7 +5,7 @@
 ## This is a simple React project
 
 
-Write these commands in your command line. (Please stick to the sequence)
+Write these commands in your command line terminal. (Please stick to the sequence)
 
 1) cd frontend
 2) npm i
