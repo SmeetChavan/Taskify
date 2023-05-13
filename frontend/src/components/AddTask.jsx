@@ -6,7 +6,7 @@ function AddTask({todoArray , setToDoArray , input , setInput , edit , setEdit})
     const handleAdd = () => {
 
         if(input === ""){
-            console.log("Trying to Ad Empty Field");
+            alert("Please don't add Empty Field");
         }
         else if(edit === null){
 
