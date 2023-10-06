@@ -53,7 +53,7 @@ function AddTask({todoArray , setToDoArray , input , setInput , edit , setEdit})
 
             <input id='todoText' type="text" placeholder={edit === null ? "Enter a todo..." : "Edit this choice"} value={input} onChange={(e)=>setInput(e.target.value)}/>
 
-            <button onClick={handleAdd}>{edit === null ? "Add" : "Edit"}</button>
+            <button id='addBtn' onClick={handleAdd}>{edit === null ? "Add" : "Edit"}</button>
 
         </section>
     );
